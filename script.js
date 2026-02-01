@@ -16,17 +16,17 @@ const karaokeData = [
         categoryLabel: "Old Songs",
         youtubeId: "akzAVhzQICs", // Replace with actual YouTube video IDs
         date: "2027-10-17",
-        views: "168K"
+        views: "1688K"
     },
     {
         id: 2,
-        title: "Maa Sanuuse - මා සනුසේ (New Release)",
+        title: "Visirunu Mal Pethi Karaoke - විසිරුණු මල් පෙති",
         description: "Latest Sinhala karaoke song. Popular among young singers.",
-        category: "new",
-        categoryLabel: "New Uploads",
-        youtubeId: "dQw4w9WgXcQ",
-        date: "2024-01-20",
-        views: "8.5K"
+        category: "old",
+        categoryLabel: "Old Songs",
+        youtubeId: "lV2VTv4dzQw",
+        date: "2017-10-22",
+        views: "484K"
     },
     {
         id: 3,
@@ -455,4 +455,5 @@ window.onerror = function(msg, url, lineNo, columnNo, error) {
     return false;
 
 };
+
 
