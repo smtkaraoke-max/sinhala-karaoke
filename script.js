@@ -10,13 +10,13 @@
 const karaokeData = [
     {
         id: 1,
-        title: "Ran Tun Kandulin Thena - රන් තුන් කඳුලින් තෙනා",
+        title: "Tharuka Pelin Eha Karaoke - තාරුකා පෙළින් එහා",
         description: "Classic Sinhala karaoke track from the golden era. Perfect for classical music lovers.",
         category: "old",
         categoryLabel: "Old Songs",
-        youtubeId: "dQw4w9WgXcQ", // Replace with actual YouTube video IDs
-        date: "2024-01-15",
-        views: "12K"
+        youtubeId: "akzAVhzQICs", // Replace with actual YouTube video IDs
+        date: "2027-10-17",
+        views: "168K"
     },
     {
         id: 2,
@@ -453,4 +453,5 @@ function truncateText(text, maxLength) {
 window.onerror = function(msg, url, lineNo, columnNo, error) {
     console.error('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + lineNo);
     return false;
+
 };
