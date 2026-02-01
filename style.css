@@ -1,13 +1,12 @@
 /* ==========================================
    SINHALA KARAOKE - MAIN STYLESHEET
    Responsive Blog-Style Layout
-   Color Scheme: Navy Blue
    ========================================== */
 
 /* CSS Variables for easy theming */
 :root {
-    --primary-color: #000080;        /* Navy Blue */
-    --primary-dark: #000060;         /* Darker Navy */
+    --primary-color: #FF0000;        /* YouTube Red */
+    --primary-dark: #CC0000;         /* Darker Red */
     --secondary-color: #282828;      /* Dark Gray */
     --text-color: #333333;           /* Main Text */
     --text-light: #666666;           /* Secondary Text */
@@ -156,7 +155,7 @@ img {
    HERO SECTION
    ========================================== */
 .hero {
-    background: linear-gradient(135deg, #f0f4ff 0%, #fff 100%);
+    background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
     padding: 60px 0;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
@@ -196,13 +195,13 @@ img {
     font-weight: 600;
     font-size: 1rem;
     transition: var(--transition);
-    box-shadow: 0 4px 12px rgba(0,0,128,0.3);
+    box-shadow: 0 4px 12px rgba(255,0,0,0.3);
 }
 
 .subscribe-btn:hover {
     background-color: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,128,0.4);
+    box-shadow: 0 6px 20px rgba(255,0,0,0.4);
 }
 
 .youtube-icon {
@@ -226,8 +225,8 @@ img {
 
 /* Filter Status Bar */
 .filter-status {
-    background-color: #e8eaf6;
-    border: 1px solid #c5cae9;
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
     padding: 12px 20px;
     border-radius: 8px;
     margin-bottom: 25px;
@@ -585,7 +584,7 @@ img {
 
 .yt-subscribe-btn:hover {
     background-color: var(--primary-dark);
-    box-shadow: 0 4px 12px rgba(0,0,128,0.3);
+    box-shadow: 0 4px 12px rgba(255,0,0,0.3);
 }
 
 /* ==========================================
@@ -794,7 +793,7 @@ img {
 
     .nav-link.active {
         border-bottom-color: var(--primary-color);
-        background-color: rgba(0,0,128,0.05);
+        background-color: rgba(255,0,0,0.05);
     }
 
     /* Hero Section Mobile */
