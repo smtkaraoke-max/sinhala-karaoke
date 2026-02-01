@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinhala Karaoke - Best Sinhala Karaoke Tracks</title>
+    <!-- Google Fonts for Sinhala and English support -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-icon">🎤</span>
+                        <span class="logo-text">Sinhala Karaoke</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <nav class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link active" data-category="all">Home</a></li>
+                        <li><a href="#" class="nav-link" data-category="all">Karaoke Songs</a></li>
+                        <li><a href="#" class="nav-link" data-category="new">New Uploads</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Best Sinhala Karaoke Tracks</h1>
+                <p class="hero-subtitle">Sing Your Favorite Sinhala Songs</p>
+                <p class="hero-description">ශ්‍රී ලාංකික කරාඕකේ ගීත</p>
+                <a href="https://www.youtube.com/channel/your-channel" target="_blank" class="subscribe-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="youtube-icon">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    Subscribe on YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Left Side: Blog Posts -->
+                <main class="main-content">
+                    <!-- Filter Status -->
+                    <div class="filter-status" id="filterStatus" style="display: none;">
+                        <span id="filterText"></span>
+                        <button class="clear-filter" id="clearFilter">Clear Filter ✕</button>
+                    </div>
+
+                    <!-- Posts Grid -->
+                    <div class="posts-grid" id="postsGrid">
+                        <!-- Posts will be dynamically loaded here via JavaScript -->
+                    </div>
+
+                    <!-- No Results Message -->
+                    <div class="no-results" id="noResults" style="display: none;">
+                        <h3>කරාඕකේ ගීත හමු නොවීය</h3>
+                        <p>No karaoke songs found matching your search.</p>
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="load-more-container">
+                        <button class="load-more-btn" id="loadMoreBtn">Load More Songs</button>
+                    </div>
+                </main>
+
+                <!-- Right Side: Sidebar -->
+                <aside class="sidebar">
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget search-widget">
+                        <h3 class="widget-title">Search Karaoke</h3>
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="ගීතය සොයන්න... Search songs...">
+                            <button id="searchBtn" aria-label="Search">🔍</button>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget categories-widget">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul class="category-list" id="categoryList">
+                            <li><button class="category-btn active" data-category="all">All Songs <span class="count">(සියලුම)</span></button></li>
+                            <li><button class="category-btn" data-category="new">New Uploads <span class="count">(නවතම)</span></button></li>
+                            <li><button class="category-btn" data-category="old">Old Songs <span class="count">(පැරණි)</span></button></li>
+                            <li><button class="category-btn" data-category="movie">Movie Songs <span class="count">(චිත්‍රපට)</span></button></li>
+                            <li><button class="category-btn" data-category="classic">Classics <span class="count">(ක්ලැසික්)</span></button></li>
+                            <li><button class="category-btn" data-category="pop">Pop Songs <span class="count">(පොප්)</span></button></li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Songs Widget -->
+                    <div class="sidebar-widget popular-widget">
+                        <h3 class="widget-title">Popular Karaoke</h3>
+                        <ul class="popular-list" id="popularList">
+                            <!-- Popular items loaded via JS -->
+                        </ul>
+                    </div>
+
+                    <!-- YouTube Channel Widget -->
+                    <div class="sidebar-widget youtube-widget">
+                        <h3 class="widget-title">Subscribe Channel</h3>
+                        <div class="youtube-card">
+                            <div class="yt-header">
+                                <div class="yt-logo">🎵</div>
+                                <div class="yt-info">
+                                    <h4>Sinhala Karaoke</h4>
+                                    <p>10K+ Subscribers</p>
+                                </div>
+                            </div>
+                            <a href="https://youtube.com/your-channel" target="_blank" class="yt-subscribe-btn">
+                                Subscribe
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Sinhala Karaoke, your ultimate destination for quality Sinhala karaoke tracks. We provide the best collection of Sinhala songs with lyrics for you to sing along.</p>
+                    <p>අපගේ චැනලය ඔබට දියුණු සුදුසුකම් සහිත සිංහල කරාඕකේ ගීත සපයයි.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <p>Email us at: <a href="mailto:info@sinhalakaraoke.com">info@sinhalakaraoke.com</a></p>
+                <p>WhatsApp: +94 77 123 4567</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sinhala Karaoke</h4>
+                    <p>Your favorite destination for Sinhala karaoke songs.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://youtube.com" target="_blank" class="social-link youtube" aria-label="YouTube">📺</a>
+                        <a href="https://facebook.com" target="_blank" class="social-link facebook" aria-label="Facebook">📘</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sinhala Karaoke. All Rights Reserved.</p>
+                <p class="credit">සිංහල කරාඕකේ - Sri Lankan Karaoke</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
