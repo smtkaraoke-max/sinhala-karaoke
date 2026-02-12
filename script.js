@@ -84,7 +84,7 @@ const karaokeData = [
         description: "Acoustic version of the popular song. Easy to sing along.",
         category: "new",
         categoryLabel: "New Uploads",
-        youtubeId: "dQw4w9WgXcQ",
+        youtubeId: "gVwvEKkP_Gk",
         date: "2024-01-25",
         views: "5K"
     }
@@ -455,6 +455,7 @@ window.onerror = function(msg, url, lineNo, columnNo, error) {
     return false;
 
 };
+
 
 
 
