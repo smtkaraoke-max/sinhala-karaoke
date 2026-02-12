@@ -44,7 +44,7 @@ const karaokeData = [
         description: "Evergreen classic by Amarasiri Peiris. Emotional ballad.",
         category: "classic",
         categoryLabel: "Classics",
-        youtubeId: "dQw4w9WgXcQ",
+        youtubeId: "qabml94hQA37WQ2U",
         date: "2023-12-28",
         views: "45K"
     },
@@ -455,6 +455,7 @@ window.onerror = function(msg, url, lineNo, columnNo, error) {
     return false;
 
 };
+
 
 
 
