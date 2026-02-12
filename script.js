@@ -40,13 +40,13 @@ const karaokeData = [
     },
     {
         id: 4,
-        title: "Dura Atha Niwasanna - දුර අථ නිවසන්න",
-        description: "Evergreen classic by Amarasiri Peiris. Emotional ballad.",
+        title: "Niwahal Sithuwili Sithana Karaoke (without voice) නිවහල් සිතුවිලි",
+        description: "Artist - Pandith W.D. Amaradewa.",
         category: "classic",
         categoryLabel: "Classics",
-        youtubeId: "qabml94hQA37WQ2U",
-        date: "2023-12-28",
-        views: "45K"
+        youtubeId: "mx6yfsCv_9w",
+        date: "2024-01-30",
+        views: "437K"
     },
     {
         id: 5,
@@ -455,6 +455,7 @@ window.onerror = function(msg, url, lineNo, columnNo, error) {
     return false;
 
 };
+
 
 
 
