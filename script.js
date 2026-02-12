@@ -30,13 +30,13 @@ const karaokeData = [
     },
     {
         id: 3,
-        title: "Sudu Hamine - සුදු හැමිනේ (Movie Song)",
+        title: "Oya Susum Pawan Wadi Karaoke (without voice) ඔය සුසුම් පවන් වැදී",
         description: "From the blockbuster movie 'Sarigama'. Beautiful melody for karaoke.",
         category: "movie",
         categoryLabel: "Movie Songs",
-        youtubeId: "dQw4w9WgXcQ",
-        date: "2024-01-10",
-        views: "25K"
+        youtubeId: "gVwvEKkP_Gk",
+        date: "2024-02-03",
+        views: "27K"
     },
     {
         id: 4,
@@ -455,5 +455,6 @@ window.onerror = function(msg, url, lineNo, columnNo, error) {
     return false;
 
 };
+
 
 
